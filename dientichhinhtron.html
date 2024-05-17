@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tính diện tích hình tròn</title>
+    </head>
+
+    <body>
+        <h1>Tính diện tích hình tròn</h1>
+        <div id="ketQua"></div>
+
+        <script>
+            function dienTichHinhTron(banKinh) {
+               var dienTich = Math.PI * banKinh * banKinh;
+               return dienTich;
+            }
+            
+            var banKinh = 5;
+            var dienTich = dienTichHinhTron(banKinh);
+            document.getElementById("ketQua").innerHTML = "Diện tích hình tròn là :" + dienTich;
+        </script>
+    </body>
+
+</html>

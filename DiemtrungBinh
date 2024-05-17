@@ -1,0 +1,24 @@
+//Tính điểm trung bình 3 môn
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="SinhHoc" type="text" placeholder="Sinh Học">
+    <input id="VatLy" type="text" placeholder="Vật Lý">
+    <input id="HoaHoc" type="text" placeholder="Hóa Học">
+    <button onclick="sum()">Tính tổng điểm trung bình</button>
+<script src="./script.js">
+const sum = () => {
+    let sinhHoc = parseInt(document.getElementById("SinhHoc").value);
+    let vatLy = parseInt(document.getElementById("VatLy").value);
+    let hoaHoc = parseInt(document.getElementById("HoaHoc").value);
+    console.log('Điểm của Sinh Học , Vật Lý , Hóa Học là :' + sinhHoc, vatLy, hoaHoc);
+    console.log('Điểm trung bình 3 môn là:' + (sinhHoc + vatLy + hoaHoc)/3);
+} 
+</script>
+</body>
+</html>
